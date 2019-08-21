@@ -27,7 +27,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 ## Nginx
 
 ``` bash
-$ sudo yum install nginx
+$ sudo yum -y install nginx
 $ touch /etc/nginx/conf.d/niu_web.conf
 ```
 
