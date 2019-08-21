@@ -20,3 +20,16 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+
+# Vultr Startup Script
+
+## Nginx
+
+``` bash
+$ sudo yum install nginx
+$ touch /etc/nginx/conf.d/niu_web.conf
+```
+
+## Github
+## Nuxt
