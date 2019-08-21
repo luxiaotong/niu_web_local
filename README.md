@@ -24,13 +24,35 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 # Vultr Startup Script
 
+## Github
+``` bash
+yum -y install git
+$ cd ~/
+$ git clone https://github.com/luxiaotong/niu_web_local.git
+$ git clone https://github.com/luxiaotong/niu_web_global.git
+```
+
+## Node && Yarn
+``` bash
+$ curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+$ curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+$ sudo yum -y install yarn
+```
+
+## Nuxt
+``` bash
+$ cd ~/niu_web_local
+$ yarn install
+$ yarn build && yarn start &
+
+$ cd ~/niu_web_global
+$ yarn install
+$ yarn build && yarn start &
+```
+
 ## Nginx
 
 ``` bash
 $ sudo yum -y install nginx
-$ touch /etc/nginx/conf.d/niu_web.conf
 $ cp ~/niu_web_local/niu_web.conf /etc/nginx/conf.d/niu_web.conf
 ```
-
-## Github
-## Nuxt
