@@ -25,4 +25,5 @@ yarn build && yarn start &
 
 ## Nginx
 sudo yum -y install nginx
-cp ~/niu_web_local/niu_web.conf /etc/nginx/conf.d/niu_web.conf
+cp ~/niu_web_local/niu_web.conf /etc/nginx/default.d/niu_web.conf
+sudo nginx &
