@@ -26,7 +26,7 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 ## Github
 ``` bash
-yum -y install git
+$ yum -y install git
 $ cd ~/
 $ git clone https://github.com/luxiaotong/niu_web_local.git
 $ git clone https://github.com/luxiaotong/niu_web_global.git
@@ -37,7 +37,6 @@ $ git clone https://github.com/luxiaotong/niu_web_global.git
 $ curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
 $ curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
 $ sudo yum -y install yarn
-$ 
 ```
 
 ## Run Nuxt
