@@ -55,4 +55,5 @@ $ yarn build && yarn start &
 ``` bash
 $ sudo yum -y install nginx
 $ cp ~/niu_web_local/niu_web.conf /etc/nginx/conf.d/niu_web.conf
+$ sudo nginx &
 ```
