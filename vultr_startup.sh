@@ -18,12 +18,12 @@ sudo yum -y install yarn
 cd ~/niu_web_local
 yarn install
 #yarn build && yarn start &
-./node_modules/pm2/bin/pm2 start npm -- start
+./node_modules/pm2/bin/pm2 start npm --name "web_local" -- run prod
 
 cd ~/niu_web_global
 yarn install
 #yarn build && yarn start &
-../niu_web_local/node_modules/pm2/bin/pm2 start npm -- start
+../node_modules/pm2/bin/pm2 start npm --name "web_global" -- run prod
 
 ## Nginx
 sudo yum -y install nginx

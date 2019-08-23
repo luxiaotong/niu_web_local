@@ -2,26 +2,6 @@
 
 > My flawless Nuxt.js project
 
-## Build Setup
-
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
-
-
 # Vultr Startup Script
 
 ## Github
@@ -43,11 +23,11 @@ $ sudo yum -y install yarn
 ``` bash
 $ cd ~/niu_web_local
 $ yarn install
-$ yarn build && yarn start &
+$ ./node_modules/pm2/bin/pm2 start npm --name "web_local" -- run prod
 
 $ cd ~/niu_web_global
 $ yarn install
-$ yarn build && yarn start &
+$ ../node_modules/pm2/bin/pm2 start npm --name "web_global" -- run prod
 ```
 
 ## Nginx
@@ -57,5 +37,5 @@ $ sudo yum -y install nginx
 mkdir /etc/nginx/servers
 cp ~/niu_web_local/nginx.conf /etc/nginx/nginx.conf
 cp ~/niu_web_local/niu_web.conf /etc/nginx/servers/niu_web.conf
-sudo nginx &
+sudo nginx
 ```
