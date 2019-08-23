@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nuxt",
     "build": "BASE_URL=http://niuweb.space nuxt build",
-    "start": "BASE_URL=http://niuweb.space nuxt start",
+    "start": "nuxt build && BASE_URL=http://niuweb.space nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
@@ -18,7 +18,8 @@
     "ipip-ipdb": "^0.3.0",
     "js-cookie": "^2.2.1",
     "net": "^1.0.2",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "pm2": "^3.5.1"
   },
   "devDependencies": {}
 }
