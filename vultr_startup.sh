@@ -17,15 +17,17 @@ sudo yum -y install yarn
 ## Run Nuxt
 cd ~/niu_web_local
 yarn install
-yarn build && yarn start &
+#yarn build && yarn start &
+./node_modules/pm2/bin/pm2 start npm -- start
 
 cd ~/niu_web_global
 yarn install
-yarn build && yarn start &
+#yarn build && yarn start &
+../niu_web_local/node_modules/pm2/bin/pm2 start npm -- start
 
 ## Nginx
 sudo yum -y install nginx
 mkdir /etc/nginx/servers
 cp ~/niu_web_local/nginx.conf /etc/nginx/nginx.conf
 cp ~/niu_web_local/niu_web.conf /etc/nginx/servers/niu_web.conf
-sudo nginx &
+sudo nginx
