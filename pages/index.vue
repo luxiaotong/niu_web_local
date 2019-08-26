@@ -15,6 +15,9 @@
         <button class="button--grey"> 中国 </button>
         <button class="button--grey" @click="change('en')"> 美国 </button>
         <button class="button--grey" @click="change('nl')"> 荷兰 </button>
+        <button class="button--grey" @click="change('fr')"> 法国 </button>
+        <button class="button--grey" @click="change('de')"> 德国 </button>
+        <button class="button--grey" @click="change('jp')"> 日本 </button>
       </div>
     </div>
   </div>
