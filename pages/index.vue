@@ -6,7 +6,7 @@
         简体中文
       </h1>
       <h2 class="subtitle">
-        Country: {{$store.state.cityInfo.countryName}}
+        Country: {{$store.state.region}}
       </h2>
       <h2 class="subtitle">
         IP: {{$store.state.ip}}
