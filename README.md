@@ -27,7 +27,7 @@ $ ./node_modules/pm2/bin/pm2 start npm --name "web_local" -- run prod
 
 $ cd ~/niu_web_global
 $ yarn install
-$ ../node_modules/pm2/bin/pm2 start npm --name "web_global" -- run prod
+$ ../niu_web_local/node_modules/pm2/bin/pm2 start npm --name "web_global" -- run prod
 ```
 
 ## Nginx
